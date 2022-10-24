@@ -130,7 +130,7 @@ header {
 .main-nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
 } 
 
 .site-nav {
@@ -140,11 +140,13 @@ header {
 .contact-nav {
     display: flex;
     padding-left: 0;
+    margin-left: auto;
 }
 
 .site-nav-item,
 .site-mail,
-.site-tel {
+.site-tel,
+.logo-item {
     display: block;
     margin-right: 50px;
     padding-top: 32px;
@@ -156,7 +158,7 @@ header {
     padding-top: 24px;
     padding-bottom: 25px;
     margin-right: 93px;
-    margin-left: auto;
+    margin-left: 0;
 }
 
 
@@ -189,6 +191,8 @@ header {
 .hero {
     background-color: var(--hero-bg-color);
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 .hero-title { 
     font-weight: 900;
@@ -204,8 +208,9 @@ header {
     display: inline-block;
     min-width: 216px;
     min-height: 50px;
-    padding: 10px 32px;
-    
+    align-items: center;
+    justify-content: center;
+       
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -327,6 +332,9 @@ header {
 
 footer {
     background-color:var(--hero-bg-color);
+    height: 252px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .logo-nav-twopart-footer,
@@ -334,22 +342,13 @@ footer {
     color: var(--hero-text-color);
 }
 
-
-.footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    height: 252px;
-}
-
 .logo-nav-footer {
     padding-left: 0;
-    width: 145px;
+    margin-bottom: 20px;
 }
 
 .address {
     padding-left: 0;
-    width: 231px;
-    margin-top: 20px;
 }
 
 .address-text,
@@ -387,9 +386,10 @@ footer {
     
     padding: 6px 22px;
 
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border: 0;
+
     border-radius: 4px;
-    border-color: var(--team-bg-color);
+    /*border-color: var(--team-bg-color);*/
 
 }
 
@@ -398,6 +398,7 @@ footer {
  {
     color: var(--hero-text-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filtr-list {
